@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Namoro</title>
+    <style>
+        body {
+          background-color: #ffc8e3;
+            background-size: cover;
+
+            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 105, 180, 0.3); /* Cor de fundo com transparência */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        h1 {
+            color: #ff69b4; /* Rosa vívido */
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #ffffff; /* Branco */
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .opcoes {
+            margin-top: 30px;
+        }
+        .opcoes button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background-color: #ff69b4; /* Rosa vívido */
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .opcoes button:hover {
+            background-color: #e64d8b; /* Rosa mais escuro no hover */
+        }
+        #nao {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro */
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+            font-size: 2rem;
+            color: rgb(0, 0, 0);
+        }
+        #sim {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Raffa, você aceita namorar comigo?</h1>
+        <p>esse não é o pedido fodão oficial... mas é um pedido</p>
+        <div class="opcoes">
+            <button onclick="mostrarNao()">Não</button>
+            <a id="sim" href="file:///C:/Users/duopo/Desktop/aa/fdf.html" target="_blank"><button>Sim</button></a>
+        </div>
+        <div id="nao">
+            bobona, essa não é uma resposta válida!!
+        </div>
+
+        <h1 style="color: #ffc7e3;">Meu amor,</h1>
+        <p style="color: #ffc7e3;">Queria te falar que eu gosto muito de você, é quase como se você fosse feita para mim, mas é egoísta da minha parte pensar de tal forma, até porque eu não sou tão bom assim para você. Isso não me impede de aproveitar cada segundo que passa do teu lado. Eu amo estar com você, sua voz, seu jeito, sua aparência e personalidade. Quero passar mais tempo contigo, e se você não se cansar, a eternidade também...</p>
+        <p style="color: #ffc7e3;"><em>Com amor,</em><br>Lucas</p>
+    </div>
+
+    <script>
+        function mostrarNao() {
+            var naoDiv = document.getElementById("nao");
+            naoDiv.style.display = "block";
+
+            // Desabilita o botão "Não" após mostrá-lo
+            var botaoNao = document.querySelector('.opcoes button');
+            botaoNao.disabled = true;
+        }
+    </script>
+</body>
+</html>
